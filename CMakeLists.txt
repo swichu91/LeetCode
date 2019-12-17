@@ -10,6 +10,10 @@ add_executable(${PROJECT_NAME}
         mainTest.cpp
 
         RemoveDuplicatesFromSortedArray/RemoveDuplicatesFromSortedArray.cpp
-        RemoveDuplicatesFromSortedArray/unittests.cpp)
+        RemoveDuplicatesFromSortedArray/unittests.cpp
+
+        RemoveLinkedListElements/RemoveLinkedListElements.cpp
+        RemoveLinkedListElements/unittests.cpp)
 
 target_include_directories(${PROJECT_NAME} PRIVATE ${CMAKE_CURRENT_LIST_DIR}/catch2)
+target_include_directories(${PROJECT_NAME} PRIVATE ${CMAKE_CURRENT_LIST_DIR}/Common)

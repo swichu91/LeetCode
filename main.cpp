@@ -187,9 +187,17 @@ void Foo(const std::string  data){
     std::cout << data;
 }
 
+
+
 int main() {
     std::cout << "Hello, World!" << std::endl;
     Foo("hello");
+
+    ListNode node1_1(2);
+    ListNode node1_2(4);
+    ListNode node1_3(3);
+    node1_1.next = &node1_2;
+    node1_2.next = &node1_3;
 
 /*    auto retfib = fib_rec(16);
     auto retfibit = fib_iter(16);
